@@ -1,6 +1,10 @@
-@extends('layouts.app') @section('css')
+@extends('layouts.app')
+
+@section('css')
 <link rel="stylesheet" href="{{ asset('css/index.css') }}" />
-@endsection @section('content')
+@endsection
+
+@section('content')
 <div class="todo__alert">
     @if (session('message'))
     <div class="todo__alert--success">{{ session('message') }}</div>
